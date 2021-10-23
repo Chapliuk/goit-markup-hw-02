@@ -20,7 +20,7 @@ body {
 .logo {
   color: var(--accent-color);
   text-decoration: none;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.17;
@@ -45,6 +45,9 @@ body {
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
   color: var(--accent-color);
 }
 /* contacts */
@@ -88,7 +91,7 @@ body {
 .hero .button {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
@@ -102,20 +105,17 @@ body {
 }
 .features-list-title {
   color: var(--title-text-color);
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
 .fetures-list-text {
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
 }
 /* work */
 .work-title {
   color: var(--title-text-color);
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -129,7 +129,6 @@ body {
 }
 .team-title {
   color: var(--title-text-color);
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -145,10 +144,43 @@ body {
   text-align: center;
 }
 .team-list-text {
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+/* portfolio */
+.buttons-list {
+  list-style: none;
+}
+.portfolio-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+  cursor: pointer;
+}
+.portfolio-button:focus,
+.portfolio-button:hover {
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+}
+.portfolio-list {
+  list-style: none;
+}
+.portfolio-list-link {
+  text-decoration: none;
+}
+.portfolio-item-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.portfolio-item-text {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--primary-text-color);
 }
 /* footer */
 .footer {
@@ -162,7 +194,6 @@ body {
 }
 .address-item {
   color: var(--secondary-text-color);
-  font-weight: normal;
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
